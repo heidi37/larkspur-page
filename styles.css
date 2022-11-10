@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #433D48;
+    font-weight: 300;
+}
+
+h1 {
+    margin-top: 0;
+    background: rgba(133, 72, 61, 1);
+    font-size: 32px;
+    border-radius: 10px;
+    padding: 14px 12px 5px;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: .1rem;
+}
+
+h2 {
+    background: rgba(58, 59, 65, .7);
+    max-width: 412px;
+    font-size: 19px;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 8px 28px 8px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #85483D;
+}
+
+h4 {
+    margin-bottom: 0;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: .1rem;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+img {
+    width: 100px;
+}
+
+#hero {
+    background: url("images/Larkspur.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 343px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+#activities {
+    background: #E1DEE3;
+    margin-top: 0;
+    padding: 39px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#activities .container {
+    margin-top: 54px;
+}
+
+#activities img {
+    border-radius: 50%;
+    transition: all 0.5s ease-out;
+}
+
+#activities img:hover{
+    transform: scale(120%);
+}
+
+.col {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col-activity{
+    flex-basis: 25%;
+    padding: 0 12px;
+}  
+
+.col-guide {
+    justify-content: center;
+} 
+
+#guide {
+    background: #DEC3BE;
+    margin: 50px auto;
+    width: 400px;
+    padding: 23px 0 23px 13px; 
+    border-radius: 10px;
+    border-bottom: 6px solid #85483D;
+}
+
+#guide img {
+    width: 180px;
+    border-radius: 10px;
+}
+
+#guide h3 {
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: .1rem;
+}
+
+#guide p {
+    font-style: italic;
+    padding: 0 1rem;
+}
+
+/*media queries */
+
+@media (max-width: 500px) {
+    .container {
+        flex-direction: column;
+    }
+    #activities .container {
+        margin-top: 10px;
+    }   
+    #activities img {
+        margin-top: 25px;
+    }
+    #guide {
+        width: auto;
+        padding: 23px;
+    }
+    #guide h3 {
+        margin-top: 10px;
+    }
+}
+
